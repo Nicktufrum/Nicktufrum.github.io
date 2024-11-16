@@ -8,18 +8,32 @@
   <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css">
 </head>
 <body>
-  <header>
-    <h1 class="hero-text">Movies, Games ETC</h1>
-    <p class="hero-subtext">Movies, Games ETC</p>
-  </header>
-  <main>
-    <section id="features" class="features">
-      <h2 data-aos="fade-up">Movies, Games and Editing Softwares:-</h2>
-      <h2 data-aos="fade-up">Movies:-</h2>
-      <div class="features-grid">
-        <!-- Feature Cards will be inserted here dynamically -->
-      </div>
-    </section>
+  <!-- Video Background Container -->
+  <section class="video-container">
+    <!-- Background Video -->
+    <video autoplay loop muted playsinline class="background-video">
+      <source src="assets/videos/background-video.mp4" type="video/mp4">
+      Your browser does not support the video tag.
+    </video>
+    <!-- Content -->
+    <div class="features-grid-wrapper">
+      <header>
+        <h1 class="hero-text"><b>Movies, Games ETC</b></h1>
+        <!-- Search Box -->
+        <input type="text" id="searchBox" placeholder="Search Movies..." class="search-box">
+      </header>
+      <main>
+        <section id="features" class="features">
+          <h2 data-aos="fade-up">Movies, Games, and Editing Softwares:</h2>
+          <h2 data-aos="fade-up">Movies:</h2>
+          <div class="features-grid">   
+          </div>
+        </section>
+      </main>
+    </div>
+  </section>
+
+  <!-- Scripts -->
   <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
   <script>
     AOS.init(); // Initialize AOS animations
@@ -50,7 +64,36 @@
       'assets/images/custom22.jpg',
       'assets/images/custom23.jpg',
       'assets/images/custom24.jpg',
-      'assets/images/custom25.jpg',
+      'assets/images/custom25.jpg'
+    ];
+
+    // Array of custom feature names (25 unique names)
+    const featureNames = [
+      'Deadpool and Wolverine',
+      'Rocky IV',
+      'The Amazing Spider Man 1',
+      'The Amazing Spider Man 2',
+      'Spider Man 2',
+      'Spider Man 3',
+      'Avengers Infinity War',
+      'Avengers Endgame',
+      'Captain America Civil War',
+      'Johnny English',
+      'The Dark Knight',
+      'The Dark Knight Rises',
+      '24/7 Support',
+      'In-app Purchases',
+      'Offline Mode',
+      'Custom Themes',
+      'Easy Navigation',
+      'Regular Updates',
+      'Multi-user Access',
+      'Encrypted Data',
+      'Powerful Tools',
+      'Enhanced Features',
+      'Voice Recognition',
+      'Gesture Control',
+      'Fast Load Time'
     ];
 
     // Array of custom download links (25 unique links)
@@ -58,15 +101,15 @@
       'https://pixeldra.in/api/file/Z4HvTr74?download',
       'https://pixeldra.in/api/file/iDwjZKk8?download',
       'https://pixeldra.in/api/file/GHzsumma?download',
-      'https://pixeldra.in/api/file/GHzsumma?download',
       'https://pixeldra.in/api/file/FvA7ESmv?download',
       'https://pixeldra.in/api/file/3bRiJ5DK?download',
-      'https://video-downloads.googleusercontent.com/ADGPM2m0A4aO-7VvnbSw3s8jiM5unqqL9nhK6RiXds3iNsf_ksvjrVhxkU_Ala8P5ekfEUXYbkHV8bW01Cf0ySo9cTAnqnur8UnYjTKPRKHJSRsino3HnrjVEN0mlAaEaWOtrUkq2TOBceqPbp2daud1Cx4J8fiDVVojnmPh5hSw4tj0BkS60HSMQMQwiLUfDrkpKpXrKeYOjlaXSXq-e2PB7f7qlVJ-biRmo8DM9WOaVcxAD5mjb64JDQAVKTuAafgFupEMJQMMDpsr3C4_Nem1VVAFgdXAuuxxcVlcgMYUQHs7kEyPF9-5Q_2n2t1cwgWaGZ5OID0RiV_rTGtwA2d_x8FjzTA6ArvPzpvXsICZ9l_M0OsbOTeoTGQh5Siga6LZK3hRVkgbBkYC9h_rj4-k7H0JkU0ZBcNbAzJmUP--cOS0IHqSr-oPehRBWkrhaS3q4bCXd_2G7LLIQrtlybkwxREaxy7Frs5Syqlh3pKnFLly9OvizL7vTV7tppzkjFhu2Vyt8RU-mlVJm6J94uYvx0RmkemsAkeVOeVKum394biJuDnWNjUg6L8MuPz5x3EC9fmIQkZvgt7BXKiGY1SZfZdct_5EXgaizHp4XmE9pDClGvoMcaF6Zv3bf2W6DVoU3WJ9pPloeDQHM7inH8_XgJ5qfeIemt2DeqI4Z5G2sGTsjgo2IItZcshGrPjYQLtQ24LEiTO-_gLXgP7qpcpAcNo_Vr80kijGn0zLQJk9nJP4f975u_dd-U6EuFQ_Kn3-rFTThHJIiuUHyKrm7FLsgQ-MQ75Q_KiUBCq4lW7xlgo2cz7ji6Fk08FEl6cvCLbmgBSSnS_1uupPzRu9KhHZMK27gRB2k7Qy3nJTcoGayssWIR6-Sv11oXjpd1RMQGd2try38ILBD3hYeocRsFUxlM8KU58b_7COxkZOEYqrEuh0I5aDovs7tKdwIl8V1eqSU4WuntbjtxNAJ23dZIqyY1gPHk2QaFSQlSE3jjLMMBbcG40JwWC3G8CuslZQboyvVF1_4hKVO5V2jAyt76ZjLJtS4rfLi6cKkkzFsfMko32Iyzvg67mvB4aOO8aLC2A5SSJ_dEiS',
       'https://pixeldra.in/api/file/vvAHqErY?download',
-      'https://example.com/download9',
       'https://pixeldra.in/api/file/jcBMcbM1?download',
       'https://pixeldra.in/api/file/UkgMbot1?download',
       'https://pixeldra.in/api/file/KJVtQ1ud?download',
+      'https://example.com/download10',
+      'https://example.com/download11',
+      'https://example.com/download12',
       'https://example.com/download13',
       'https://example.com/download14',
       'https://example.com/download15',
@@ -79,61 +122,43 @@
       'https://example.com/download22',
       'https://example.com/download23',
       'https://example.com/download24',
-      'https://example.com/download25',
+      'https://example.com/download25'
     ];
 
-    // Array of custom feature names
-    const featureNames = [
-      'Deadpool and Wolverine', 'Rocky IV', 'The Amazing Spider Man 1', 'The Amazing Spider Man 2', ' Spider Man 2',
-      'Spider Man 3', 'Avengers Infinity War', 'Avengers Endgame', 'Captian America Civil War', 'Johhny English',
-      'The Dark Knight', 'The Dark Knight Rises', '24/7 Support', 'In-app Purchases', 'Offline Mode',
-      'Custom Themes', 'Easy Navigation', 'Regular Updates', 'Multi-user Access', 'Encrypted Data',
-      'Powerful Tools', 'Enhanced Features', 'Voice Recognition', 'Gesture Control', 'Fast Load Time'
-    ];
-
-    // Array of custom feature descriptions
-    const featureDescriptions = [
-      'Entertainment and Action Movie.',
-      'Action Movie.',
-      'Entertainment And Action Movie.',
-      'Entertainment And Action Movie.',
-      'Entertainment And Action Moive.',
-      'Entertainment And Action Movie.',
-      'Entertainment And Action Movie.',
-      'Entertainment And Action Movie.',
-      'Action Movie.',
-      'Entertainment And Action Movie.',
-      'Action Movie.',
-      'Action Movie.',
-      'Receive constant support from our 24/7 customer service team.',
-      'Make in-app purchases for premium features without leaving the app.',
-      'Use the app offline, even without an internet connection.',
-      'Choose from a variety of beautiful themes to match your style.',
-      'Navigate through the app with ease, thanks to its user-friendly interface.',
-      'Enjoy new features and updates that are added regularly.',
-      'Allow multiple users to access and interact with the app simultaneously.',
-      'Ensure your data is always safe with encryption for every transaction.',
-      'Leverage powerful tools that streamline your workflow.',
-      'Discover new and enhanced features designed to make your life easier.',
-      'Use voice commands for a hands-free experience.',
-      'Control the app with intuitive gestures for a modern experience.',
-      'Access and load content almost instantly with faster load times.'
-    ];
-
-    // Dynamically generate feature cards (25)
+    // Dynamically generate feature cards
     const featuresGrid = document.querySelector('.features-grid');
-    for (let i = 0; i < 25; i++) { // Loop from 0 to 24 for 25 cards
+    for (let i = 0; i < images.length; i++) {
       const card = document.createElement('div');
       card.classList.add('feature-card');
       card.setAttribute('data-aos', 'fade-up');
       card.innerHTML = `
-        <img src="${images[i]}" alt="Feature ${i + 1}">
+        <div class="image-container">
+          <img src="${images[i]}" alt="Feature ${i + 1}" class="feature-image">
+          <video class="feature-video" muted autoplay loop>
+            <source src="${downloadLinks[i]}" type="video/mp4">
+          </video>
+        </div>
         <h3>${featureNames[i]}</h3>
-        <p>${featureDescriptions[i]}</p>
+        <p>Description for Feature ${i + 1}.</p>
         <a href="${downloadLinks[i]}" class="download-btn">Download</a>
       `;
       featuresGrid.appendChild(card);
     }
+
+    // Implement search functionality
+    const searchBox = document.getElementById('searchBox');
+    searchBox.addEventListener('input', function () {
+      const searchText = searchBox.value.toLowerCase();
+      const cards = document.querySelectorAll('.feature-card');
+      cards.forEach((card, index) => {
+        const title = featureNames[index].toLowerCase();
+        if (title.includes(searchText)) {
+          card.style.display = 'block'; // Show card
+        } else {
+          card.style.display = 'none'; // Hide card
+        }
+      });
+    });
   </script>
 </body>
 </html>
